@@ -17,7 +17,8 @@ console.log (operacao4)
 //1
 
 const salarioFixo = 2000
-const auxilioCreche = 45.50
+const auxilioCreche = 45.50*2
+
 
 let resp1
 resp1 = salarioFixo + auxilioCreche
@@ -99,12 +100,17 @@ let descontoInssJun = salarioTotalJun * inss
 let totalJun = salarioTotalJun - descontoInssJun
 console.log("Total Junho:", totalJun.toFixed(2))
 
+let totalsalarios
+totalsalarios = (totalJan + totalFev + totalMar + totalAbr + totalMai + totalJun)
+console.log("Total de salários somados=",totalsalarios.toFixed(2))
+
+
 
 //5
 
 let mediaSalarial
 
-mediaSalarial = ((totalJan + totalFev + totalMar + totalAbr + totalMai + totalJun)/6)
+mediaSalarial = ((totalsalarios)/6)
 console.log("A média salarial é de:", mediaSalarial.toFixed(2))
 
 

@@ -1,5 +1,5 @@
 let numeroPar
-numeroPar = prompt ("Digite um número par...")
+numeroPar = Number (prompt ("Digite um número par..."))
 console.log (numeroPar)
 
 numeroPar = numeroPar % 2
